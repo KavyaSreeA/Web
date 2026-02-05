@@ -225,20 +225,13 @@ nav ul li a.active {
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.938rem;
-    transition: all 0.2s ease;
     border: none;
     cursor: pointer;
-    box-shadow: none;
+    transition: background 0.2s ease;
 }
 
 .btn:hover {
-    background: #245261;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
-}
-
-.btn:active {
-    transform: translateY(0);
+    background: #1e4a57;
 }
 
 .btn-secondary {
