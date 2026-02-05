@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - StartupName</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">StartupName</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn" style="margin-left: 1rem;">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" style="display: block; text-align: center;">
+            <div class="fade-in">
+                <div class="hero-badge">Contact Us</div>
+                <h1><span class="highlight">Get in Touch</span></h1>
+                <p style="margin-left: auto; margin-right: auto;">We'd love to hear from you. Let's start a conversation about your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-container">
+        <div class="container">
+            <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                <h2 style="text-align: center; margin-bottom: 0.5rem; color: var(--text-primary);">Send Us a Message</h2>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 0.938rem;">Fill out the form below and we'll get back to you within 24 hours.</p>
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="How can we help you?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us more about your inquiry..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+
+            <!-- Contact Information Cards -->
+            <div class="contact-info">
+                <div class="info-card fade-in">
+                    <h3>Email Us</h3>
+                    <p>hello@startupname.com</p>
+                    <p>support@startupname.com</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <p>Mon-Fri, 9AM-6PM EST</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>Visit Us</h3>
+                    <p>123 Innovation Street</p>
+                    <p>San Francisco, CA 94102</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>Social Media</h3>
+                    <p>@StartupName</p>
+                    <p>Follow us for updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map/Additional Info Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Office Hours</h2>
+            <p>Our team is available Monday through Friday, 9:00 AM to 6:00 PM EST. For urgent matters outside business hours, please email support@startupname.com and we'll respond as quickly as possible.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 StartupName. All rights reserved. | Designed with care</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
