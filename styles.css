@@ -110,15 +110,12 @@ nav ul li a.active {
     padding: 1rem 2rem;
     background: var(--primary);
     color: var(--text-primary);
-    box-shadow: var(--shadow-xl);
     font-weight: 700;
     border-radius: 50px;
 }
 
 .floating-cta .btn:hover {
     background: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(109, 213, 213, 0.4);
 }
 
 @media (max-width: 768px) {
